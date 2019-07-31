@@ -1,0 +1,94 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Weather Dashboard</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="refresh" content = "60">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-md navbar-default fixed-top">
+        <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="file:///C:/Users/jazmi/Documents/BootCamp/weather_website/index%20-%20Copy.html">Weather and Latitude</a>
+            </div>
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Max Temperature</a></li>
+                    <li><a href="#">Humidity</a></li>
+                    <li><a href="#">Cloudiness</a></li>
+                    <li><a href="#">Wind Speed</a></li>
+
+                </ul>
+            </li>
+            <li><a href="file:///C:/Users/jazmi/Documents/BootCamp/weather_website/comparison.html">Comparison</a></li>
+            <li><a href="#">Data</a></li>
+        </ul>
+    </div>
+    </nav>
+
+    <!--summary section jumbotron-->
+   
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Weather and Latitude</h1>
+            <!--img src="https://github.com/jazminhicks/weather_website/blob/master/Resources/assets/images/Fig1.png?raw=true" alt="Max Temp" width="250" height="200" -->
+            <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this we pulled data from the OpenWeatherMap API and created a Python script to visualize the weather of 500+ cities across the world.  </p>
+            <p>After organizing the data we used Matplotlib to plot various aspects of the weather vs. latitude in each city. In comparison to latitude, we looked at the following factors: 
+            <ul>
+                <li>Temperature</li>
+                <li>Humidity</li>
+                <li>Cloudiness</li>
+                <li> Wind Speed</li>
+            </ul></p>
+            <p> This site provides the source data and visulizations that were created during this analysis as well as explanation of trends and observations witnessed.</p>
+        </div>
+    </div>
+    
+    <div class="container bg-3 text-center">
+        <h4>Visualizations</h4>
+        <div class="row">
+            <div class="col-lg-3">
+                <p><a href="file:///C:/Users/jazmi/Documents/BootCamp/weather_website/temp.html"> Max Temperature </a></p>
+                <img class="img-thumbnail" src="https://github.com/jazminhicks/weather_website/blob/master/Resources/assets/images/Fig1.png?raw=true" alt="Max Temp" class="img-1" >
+            </div>
+            <div class="col-lg-3">
+                    <p><a href="file:///C:/Users/jazmi/Documents/BootCamp/weather_website/humidity.html"> Humidity </a></p>
+                    <img class="img-thumbnail" src="https://github.com/jazminhicks/weather_website/blob/master/Resources/assets/images/Fig2.png?raw=true" alt="Humidity" class="img-2">
+            </div>
+            <div class="col-lg-3">
+                    <p><a href="file:///C:/Users/jazmi/Documents/BootCamp/weather_website/clouds.html"> Cloudiness </a></p>
+                    <img class="img-thumbnail" src="https://github.com/jazminhicks/weather_website/blob/master/Resources/assets/images/Fig3.png?raw=true" alt="Cloudiness" class="img-3">
+            </div>
+            <div class="col-lg-3">
+                    <p><a href="file:///C:/Users/jazmi/Documents/BootCamp/weather_website/wind.html"> Wind Speed </a></p>
+                    <img class="img-thumbnail" src="https://github.com/jazminhicks/weather_website/blob/master/Resources/assets/images/Fig4.png?raw=true" alt="Wind" class="img-4">
+            </div>
+        </div>
+    </div>
+
+    <footer class="container text-center">
+        <p> 2019 Data Analysis and Visualization Bootcamp</p>
+    </footer>
+               
+</body>
+</html>
