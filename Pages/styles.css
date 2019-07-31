@@ -1,0 +1,65 @@
+.navbar{
+    background-color: gainsboro;
+    border-radius: 10px
+
+}
+.plot-title {
+    margin-top: 70px;
+    padding: 20px;
+}
+
+.plot {
+    padding:40px;
+}
+.observations {
+    position: absolute;
+    padding: 30px;
+    bottom: 40%;
+    margin-right: 70px;
+    text-align: left;
+    font-size: 20px;
+}
+
+
+.navbar-nav li{
+    display: inline-block;
+    padding: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.compare-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.compare {
+    margin-top: 60px;
+}
+.jumbotron {
+    margin-top:60px;
+}
+
+.container {
+    margin-top:60px;
+}
+
+.data {
+    margin-top: 100px;
+}
+.dataframe {
+    text-align: left;
+    border: None;
+    margin-top: 50px;
+}
+
+thead th {
+    text-align: center;
+    border: None;
+}
+footer {
+    margin-top:50px;
+}
+
