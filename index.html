@@ -17,15 +17,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
-    <link rel="stylesheet" href="jazminhicks.github.io/Pages/styles.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     
     <!--nav bar-->
-    <nav class="navbar navbar-expand-md navbar-default fixed-top">
+   <!-- <nav class="navbar navbar-expand-md navbar-default">
         <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="file:///C:/Users/jazmi/Documents/BootCamp/weather_website/index%20-%20Copy.html">Weather and Latitude</a>
+            <a class="navbar-brand " href="file:///C:/Users/jazmi/Documents/BootCamp/weather_website/index%20-%20Copy.html">Weather and Latitude</a>
             </div>
         <ul class="nav navbar-nav">
             <li class="dropdown">
@@ -44,45 +44,76 @@
             <li><a href="#">Data</a></li>
         </ul>
     </div>
-    </nav>
+    </nav>-->
 
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Latitude and the Weather</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plots
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Temperature</a>
+          <a class="dropdown-item" href="#">Humidity</a>
+          <a class="dropdown-item" href="#">Cloudiness</a>
+          <a class="dropdown-item" href="#">Wind Speed</a>
+
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Comparison</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Data</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
     <!--summary section jumbotron-->
    
     <div class="jumbotron">
-        <div class="container">
-            <h1>Weather and Latitude</h1>
+            <h1>Summary: Latitude vs. X</h1>
             <!--img src="https://github.com/jazminhicks/weather_website/blob/master/Resources/assets/images/Fig1.png?raw=true" alt="Max Temp" width="250" height="200" -->
             <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this we pulled data from the OpenWeatherMap API and created a Python script to visualize the weather of 500+ cities across the world.  </p>
             <p>After organizing the data we used Matplotlib to plot various aspects of the weather vs. latitude in each city. In comparison to latitude, we looked at the following factors: 
-            <ul>
-                <li>Temperature</li>
-                <li>Humidity</li>
-                <li>Cloudiness</li>
-                <li> Wind Speed</li>
-            </ul></p>
+            <p><b>Temperature | Humidity | Cloudiness | Wind Speed</b></p>
             <p> This site provides the source data and visulizations that were created during this analysis as well as explanation of trends and observations witnessed.</p>
-        </div>
+        
     </div>
     
     <div class="container bg-3 text-center">
         <h4>Visualizations</h4>
         <div class="row">
             <div class="col-lg-3">
-                <p><a href="file:///C:/Users/jazmi/Documents/BootCamp/weather_website/temp.html"> Max Temperature </a></p>
+                <a href="file:///C:/Users/jazmi/Documents/BootCamp/weather_website/temp.html">
                 <img class="img-thumbnail" src="https://github.com/jazminhicks/weather_website/blob/master/Resources/assets/images/Fig1.png?raw=true" alt="Max Temp" class="img-1" >
-            </div>
+                </a>
+              </div>
             <div class="col-lg-3">
-                    <p><a href="file:///C:/Users/jazmi/Documents/BootCamp/weather_website/humidity.html"> Humidity </a></p>
+                    <a href="file:///C:/Users/jazmi/Documents/BootCamp/weather_website/humidity.html">
                     <img class="img-thumbnail" src="https://github.com/jazminhicks/weather_website/blob/master/Resources/assets/images/Fig2.png?raw=true" alt="Humidity" class="img-2">
-            </div>
+                    </a>
+                  </div>
             <div class="col-lg-3">
-                    <p><a href="file:///C:/Users/jazmi/Documents/BootCamp/weather_website/clouds.html"> Cloudiness </a></p>
+                    <a href="file:///C:/Users/jazmi/Documents/BootCamp/weather_website/clouds.html">
                     <img class="img-thumbnail" src="https://github.com/jazminhicks/weather_website/blob/master/Resources/assets/images/Fig3.png?raw=true" alt="Cloudiness" class="img-3">
-            </div>
+                    </a>
+                  </div>
             <div class="col-lg-3">
-                    <p><a href="file:///C:/Users/jazmi/Documents/BootCamp/weather_website/wind.html"> Wind Speed </a></p>
+                    <a href="file:///C:/Users/jazmi/Documents/BootCamp/weather_website/wind.html">
                     <img class="img-thumbnail" src="https://github.com/jazminhicks/weather_website/blob/master/Resources/assets/images/Fig4.png?raw=true" alt="Wind" class="img-4">
-            </div>
+                    </a>
+                  </div>
         </div>
     </div>
 
