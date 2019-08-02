@@ -1,8 +1,19 @@
-.navbar{
+html {
     background-color: gainsboro;
+}
+/*.navbar{
+    background-color: darkslateblue;
     border-radius: 10px
 
+}*/
+.navbar-brand{
+    background-color:turquoise;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+
 }
+
 .plot-title {
     margin-top: 70px;
     padding: 20px;
@@ -20,15 +31,28 @@
     font-size: 20px;
 }
 
+/*.dropdown-menu {
+    color:black;
+}
 
-.navbar-nav li{
+#navbarNavDropdown.collapse.navbar-collapse{
+    position: absolute;
+    right: 20px;
+}
+.navbar-nav li, .navbar-nav li a{
     display: inline-block;
     padding: 10px;
     margin-right: 3px;
     margin-left: 3px;
     cursor: pointer;
     border-radius: 3px;
+    color: white;
 }
+
+.dropdown-menu li a{
+    color:black;
+}*/
+
 
 .compare-title {
     font-size: 30px;
@@ -38,12 +62,25 @@
 .compare {
     margin-top: 60px;
 }
-.jumbotron {
-    margin-top:60px;
+.jumbotron{
+    padding: 30px 30px;
+    margin-top: 40px;
 }
 
+
+@media screen and (min-width: 768px) {
+.jumbotron .h1, .jumbotron h1 {
+    font-size: 50px;
+    color:rgb(69, 187, 175);
+}
+}
 .container {
-    margin-top:60px;
+    margin-top:20px;
+}
+
+h4 {
+    color:rgb(69, 187, 175);
+    padding: 20px;
 }
 
 .data {
